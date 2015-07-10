@@ -1,0 +1,450 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+}
+
+/* CSS GRID */
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.row:after {
+	display: block;
+	content: '.';
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+[class*="span"] {
+	float: left;
+	display: inline;
+}
+.span1 {width: 33.3%;}
+.span2 {width: 49.95%;}
+.span3 {width: 66.6%;}
+.span4 {width: 100%;}
+
+/* MAIN */
+.container p {
+	font-size: 18px;
+	margin: 15px 0;
+}
+.container .name {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #353738;
+}
+.container .text {
+	color: #848789;
+	width: 80%;
+	margin: 0 auto;
+}
+.header nav {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 535px;
+	position: absolute;
+	margin: -30px auto;
+	left: 0;
+	right: 0;
+}
+.header nav ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.header nav ul .logo{
+	position: relative;
+	top: 40px;
+}
+.header nav ul li a {
+	color: #3f3b48;
+	text-decoration: none;
+}
+.header nav ul li a:hover{
+	text-decoration: underline;
+}
+.header img {
+	width: 100%;
+}
+.button-up{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	background: url(../img/button-up.png) no-repeat center center;
+	background-size: 100%;
+	z-index:100;
+	right:1%;
+	bottom: 5%;
+	display: none;
+	cursor: pointer;
+}
+
+.about {
+	text-align: center;
+}
+.about .sprite-icon,
+.twitter .sprite-icon{
+	width: 70px;
+	height: 70px;
+	margin: 3% auto 0 auto;
+}
+.about .sprite-icon{
+	background: url(../img/sprite-icon.png)  no-repeat;
+}
+.about .text{
+	margin-bottom: 5%; 
+}
+
+.work {
+	text-align: center;
+}
+.work .logo {
+	display: flex;
+}
+.work .logo img {
+	margin: auto;
+}
+.work .info {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.work .height {
+	height: 500px;
+}
+.work .info .triangle::before {
+    content: ''; 
+    position: relative;
+    top:28px; 
+    left: 0;
+    right: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff; 
+}
+.work .info img {
+	display: block;
+	width: 100%;
+}
+.work .info .sprite-icon{
+	width: 70px;
+	height: 50px;
+	margin: 0 auto;
+}
+.work .info .rectangle{
+	text-align: justify;
+}
+.work .info .triangle {
+	overflow: hidden;
+}
+.work .bike-one .logo {
+	background: #000 url(../img/bike-1-bg.png)  no-repeat;
+}
+.work .bike-one .info .sprite-icon {
+	background: #fff url(../img/sprite-icon.png) 30% no-repeat;
+}
+.work .bike-two .logo {
+	background: #000 url(../img/bike-2-bg.png) no-repeat;
+}
+.work .bike-two .info .sprite-icon {
+	background: #fff url(../img/sprite-icon.png) 57% no-repeat;
+}
+.work .bike-three .logo {
+	background: #000 url(../img/bike-3-bg.png)  no-repeat;
+}
+.work .bike-three .bike {
+	background: #000 url(../img/bike-3-bg-2.png) no-repeat;
+}
+.work .bike-three .info .sprite-icon {
+	background: #fff url(../img/sprite-icon.png) 82% no-repeat;
+}
+.work .bike-one .logo,
+.work .bike-two .logo,
+.work .bike-three .logo,
+.work .bike-three .bike {
+	background-size: cover;
+}
+
+.twitter {
+	text-align: center;
+}
+.twitter .sprite-icon{
+	background: #fff url(../img/sprite-icon.png) 110% no-repeat;
+}
+.twitter .twitter-name {
+	text-transform: none;
+}
+.twitter .twitter-text{
+	font-style: italic;
+}
+.twitter .twitter-name span {
+	font-weight: lighter;
+}
+.twitter .switch {
+	width: 65px;
+	margin: 5% auto;
+	padding-bottom: 3%;
+}
+.twitter .switch .circle {
+	margin: 5% 3%;
+	float: left;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #a9afb3;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.twitter .switch .circle-one {
+	background: #a9afb3;
+}
+
+.shop .shop-now {
+	width: 100%;
+}
+.shop .shop-now img {
+	display: block;
+	width: 100%;
+}
+.shop .horiz {
+	display: flex;
+	flex-direction: row;
+	align-items:baseline;
+}
+.shop img:hover {
+	cursor: pointer;
+	opacity: .2;
+}
+.shop .img-block .shop-now{
+	background: #58a589 url(../img/shop-icon.png) no-repeat center;
+}
+.shop .discover {
+	background-color: #282f35;
+}
+.shop .discover .button-shop {
+	text-align:center;
+	margin:5% auto;
+	width:300px;
+	border: 1px solid #94979a;
+	color: #fff;
+}
+.shop .discover .button-shop:hover {
+	background: #94979a;
+	color: #282f35;
+	cursor: pointer;
+}
+.shop .discover .button-shop p {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.shop .shop-dis {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.9);
+	left:0;
+	top:0;
+	z-index: 300;
+	display: none;
+}
+.shop .shop-dis .products {
+	margin: 8% auto;
+	width: 50%;
+	height: 75%;
+	background : url(../img/coming-soon.jpg) no-repeat;
+	background-size: 100%;
+}
+.shop .shop-dis .products p {
+	font-size: 27px;
+	float: right;
+	margin: 0 3%;
+	cursor: pointer;
+}
+.contact {
+	text-align: center;
+	margin-bottom: 15%;
+}
+.contact img {
+	margin: 5% 0 1% 0;
+}
+.contact .text {
+	font-style: italic;
+	padding: 2%;
+	font-size: 24px;
+}
+.contact form input {
+	width: 350px;
+	height: 50px;
+	border:1px solid #d3d7d9;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: normal;
+}
+.contact form button {
+	width: 100px;
+	height: 50px;
+	margin-left:5px;
+	background: #64c29e;
+	border: none;
+	color: #fff;
+}
+.contact form button:hover {
+	opacity: .8;
+}
+
+.footer {
+	text-align: center;
+	color: #848789;
+}
+.footer .adres .adres-text {
+	text-align: justify;
+	margin-left: 20%;
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer .adres .adres-text span {
+	font-style: italic;
+	font-weight: normal;
+}
+.footer .social .icon {
+	display: inline-block;
+	width:40px;
+	height: 40px;
+	margin:5% 1%;
+}
+.footer .social .icon:hover {
+	opacity: .7;
+}
+.footer .social .twitter-icon {
+	background: #fff url(../img/social.png) 1%;
+}
+.footer .social .facebook-icon {
+	background: #fff url(../img/social.png) 46%;
+}
+.footer .social .pinterest-icon {
+	background: #fff url(../img/social.png) 92%;
+}
+.footer .credits .credit-text {
+	font-style: italic;
+	font-size: 14px;
+}
+.footer .credits .credit-text img {
+	position: relative;
+	top:20px;
+}
+
+
+@media screen and (min-width: 2650px){
+	.header nav {
+		width: 710px;
+	}
+}
+@media screen and (max-width: 910px) {
+ 	.work .height {
+ 		height: 400px;
+ 	}
+ 	.container p {
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 740px){
+	.header nav {
+		width: 500px;
+		font-size: 10px;
+	}
+	.header nav ul .logo img {
+		margin-left: 15px;
+		width: 80%;
+	}
+	.work .height {
+ 		height: 300px;
+ 	}
+ 	.container p {
+		font-size: 10px;
+	}
+	.shop .img-block .shop-now{
+	background-size: 80px;
+	}
+	.contact img {
+		width: 90px;
+	}
+}
+@media screen and (max-width: 540px){
+	.about .sprite-icon,
+	.twitter .sprite-icon {
+		width: 40px;
+		height: 40px;
+	}
+	.twitter .sprite-icon,
+	.about .sprite-icon {
+	background-size: 450%;
+	}
+	.header nav {
+		width:40%;
+		margin: 2%;
+	}
+	.header nav ul li {
+		display: block;
+	}
+	.header nav ul .logo {
+		display: none;
+	}
+	.work .height {
+ 		height: 200px;
+ 	}
+	.work .info .sprite-icon {
+		display: none;
+	}
+	.work .logo {
+		width: 100%;
+	}
+	.work .logo img {
+		width: 20%;
+	}
+	.work .info {
+		width: 100%;
+	}
+	.work .bike-two .logo {
+		display: none;
+	}
+	.work .bike-three .bike {
+		display: none;
+	}
+	.shop .img-block .shop-now{
+		background-size: 50px;
+	}
+	.contact form input {
+		width: 240px;
+		height: 40px;
+	}
+	.contact form button {
+		width: 80px;
+		height: 40px;
+	}
+	.footer .adres,
+	.footer .credits {
+		display: none;
+	}
+	.footer .social {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 430px){
+	.work .height {
+ 		height: 200px;
+ 	}
+ 	.work .info {
+		justify-content:center;
+	}
+	.twitter .switch {
+		padding-bottom: 8%;
+	}
+	.shop .discover .button-shop {
+		width: 240px;
+	}
+}
