@@ -47,7 +47,7 @@ body {
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
-	width: 535px;
+	width: 545px;
 	position: absolute;
 	margin: -30px auto;
 	left: 0;
@@ -368,7 +368,7 @@ body {
 		font-size: 10px;
 	}
 	.shop .img-block .shop-now{
-	background-size: 80px;
+		background-size: 80px;
 	}
 	.contact img {
 		width: 90px;
@@ -382,7 +382,7 @@ body {
 	}
 	.twitter .sprite-icon,
 	.about .sprite-icon {
-	background-size: 450%;
+		background-size: 450%;
 	}
 	.header nav {
 		width:40%;
